@@ -1,5 +1,6 @@
 <div class="container">
   {{#link-to-animated 'posts.edit' this animations="application:slideDown" class="btn btn-primary"}}Edit Post{{/link-to-animated}}
+  <button {{action deletePost}} class="btn btn-danger">Delete Post</button>
 
   <h1>Post: {{title}}</h1>
   <ol class="breadcrumb">
