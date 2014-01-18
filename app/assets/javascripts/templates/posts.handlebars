@@ -1,0 +1,7 @@
+<h1>Posts</h1>
+
+<ul>
+  {{#each controller}}
+    <li>{{#link-to 'post' this}}{{title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
