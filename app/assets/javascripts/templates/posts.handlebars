@@ -1,10 +1,12 @@
-<h1>Posts</h1>
-<ol class="breadcrumb">
-  <li class="active">Posts</li>
-</ol>
+<div class="container">
+  <h1>Posts</h1>
+  <ol class="breadcrumb">
+    <li class="active">Posts</li>
+  </ol>
 
-<ul>
-  {{#each controller}}
-    <li>{{#link-to 'post' this}}{{title}}{{/link-to}}</li>
-  {{/each}}
-</ul>
+  <ul>
+    {{#each controller}}
+      <li>{{#link-to-animated 'post' this animations="application:slideRight"}}{{title}}{{/link-to-animated}}</li>
+    {{/each}}
+  </ul>
+</div>

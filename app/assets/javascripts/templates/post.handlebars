@@ -1,7 +1,7 @@
-<h1>Post: {{title}}</h1>
-<ol class="breadcrumb">
-  <li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
-  <li class="active">{{title}}</li>
-</ol>
-
-{{outlet}}
+<div class="container">
+  <h1>Post: {{title}}</h1>
+  <ol class="breadcrumb">
+    <li>{{#link-to-animated 'posts' animations="application:slideLeft"}}Posts{{/link-to-animated}}</li>
+    <li class="active">{{title}}</li>
+  </ol>
+</div>

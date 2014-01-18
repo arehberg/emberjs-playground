@@ -2,6 +2,7 @@
 #= require handlebars
 #= require ember
 #= require ember-data
+#= require ember-animated-outlet
 #= require_self
 #= require bootstrap
 #= require ember_playground
