@@ -1,12 +1,13 @@
 <div class="container">
-  <h1>Posts</h1>
+  {{#link-to-animated 'posts.new' animations="application:slideDown" class="btn btn-success pull-right"}}New Post{{/link-to-animated}}
+  <h1>Posts <small>{{postCount}} total posts</small></h1>
   <ol class="breadcrumb">
     <li class="active">Posts</li>
   </ol>
 
   <ul>
     {{#each controller}}
-      <li>{{#link-to-animated 'post' this animations="application:slideRight"}}{{title}}{{/link-to-animated}}</li>
+      <li>{{#link-to-animated 'posts.show' this animations="application:slideLeft"}}{{title}}{{/link-to-animated}}</li>
     {{/each}}
   </ul>
 </div>

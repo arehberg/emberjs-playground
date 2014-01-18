@@ -1,0 +1,11 @@
+<div class="container">
+  {{#link-to-animated 'posts.edit' this animations="application:slideDown" class="btn btn-primary"}}Edit Post{{/link-to-animated}}
+
+  <h1>Post: {{title}}</h1>
+  <ol class="breadcrumb">
+    <li>{{#link-to-animated 'posts' animations="application:slideRight"}}Posts{{/link-to-animated}}</li>
+    <li class="active">{{title}}</li>
+  </ol>
+
+  <p>{{body}}</p>
+</div>

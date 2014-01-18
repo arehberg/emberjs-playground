@@ -13,4 +13,15 @@ Post.create(
   body: "This will be a simple post record."
 )
 
+Post.create(
+  title: "Another Sample Post",
+  body: "This is the second sample post. Wow so cool huh?"
+)
+
+User.create(
+  email: 'hi@alexrehberg.com',
+  password: 'password',
+  password_confirmation: 'password'
+)
+
 puts "Complete!"

@@ -1,4 +1,5 @@
 #= require jquery
+#= require csrf_for_ajax
 #= require handlebars
 #= require ember
 #= require ember-data
